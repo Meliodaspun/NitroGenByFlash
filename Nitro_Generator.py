@@ -78,7 +78,7 @@ if chouse == "GN":
         amount = int(input(f'[{Fore.GREEN}>{Fore.RESET}] - Ammount of nitro codes to generate: '))
         value = 1
         while value <= amount:
-            code = "https://discord.gift/" + ('').join(random.choices(string.ascii_letters + string.digits, k=16))
+            code =  ('').join(random.choices(string.ascii_letters + string.digits, k=16))
             f = open('CODES.txt', "a+")
             f.write(f'{code}\n')
             f.close()
